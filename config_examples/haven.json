@@ -12,7 +12,6 @@
 	"cnAlgorithm": "cryptonight_heavy",
 	"cnVariant": null,
 	"cnBlobType": 0,
-
 	"logging": {
 		"files": {
 			"level": "info",
@@ -109,19 +108,68 @@
 		}
 	},
 
-	"payments": {
-		"enabled": true,
-		"interval": 1800,
-		"maxAddresses": 50,
-		"mixin": 5,
-		"priority": 0,
-		"transferFee": 5000000000,
-		"dynamicTransferFee": true,
-		"minerPayFee": true,
-		"minPayment": 1000000000000,
-		"maxPayment": null,
-		"maxTransactionAmount": 0,
-		"denomination": 100000000000
+        "payments": {
+	    "enabled": true,
+	    "interval": 1800,
+	    "maxAddresses": 50,
+	    "mixin": 10,
+	    "priority": 0,
+	    "assets":{
+		"XHV":{
+		    "transferFee": 5000000000,
+		    "dynamicTransferFee": true,
+		    "minerPayFee": true,
+		    "minPayment": 1000000000000,
+		    "maxPayment": null,
+		    "maxTransactionAmount": 0,
+		    "denomination": 100000000000
+		},
+		"XUSD":{
+		    "transferFee": 5000000000,
+		    "dynamicTransferFee": true,
+		    "minerPayFee": true,
+		    "minPayment": 10000000000000,
+		    "maxPayment": null,
+		    "maxTransactionAmount": 0,
+		    "denomination": 100000000000
+		},
+		"XAG":{
+		    "transferFee": 5000000000,
+		    "dynamicTransferFee": true,
+		    "minerPayFee": true,
+		    "minPayment": 1000000000000,
+		    "maxPayment": null,
+		    "maxTransactionAmount": 0,
+		    "denomination": 100000000000
+		},
+		"XAU":{
+		    "transferFee": 5000000000,
+		    "dynamicTransferFee": true,
+		    "minerPayFee": true,
+		    "minPayment": 1000000000,
+		    "maxPayment": null,
+		    "maxTransactionAmount": 0,
+		    "denomination": 100000000000
+		},
+		"XCNY":{
+		    "transferFee": 5000000000,
+		    "dynamicTransferFee": true,
+		    "minerPayFee": true,
+		    "minPayment": 1000000000000000,
+		    "maxPayment": null,
+		    "maxTransactionAmount": 0,
+		    "denomination": 100000000000
+		},
+		"XEUR":{
+		    "transferFee": 5000000000,
+		    "dynamicTransferFee": true,
+		    "minerPayFee": true,
+		    "minPayment": 10000000000000,
+		    "maxPayment": null,
+		    "maxTransactionAmount": 0,
+		    "denomination": 100000000000
+		},
+	    },
 	},
 
 	"blockUnlocker": {
